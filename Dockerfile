@@ -17,7 +17,9 @@ COPY ./frontend /commento/frontend/
 WORKDIR /commento/frontend/
 
 RUN apk update && apk add bash make
-RUN npm install -g html-minifier@3.5.7 uglify-js@3.4.1 sass@1.5.1
+RUN npm config set unsafe-perm true \
+  && npm install -g html-minifier@3.5.7 uglify-js@3.4.1 sass@1.5.1 \
+  && npm config set unsafe-perm false
 
 RUN make prod -j$(($(nproc) + 1))
 
