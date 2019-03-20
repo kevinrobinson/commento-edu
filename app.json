@@ -1,0 +1,15 @@
+{
+  "name": "commento-edu",
+  "repository": "https://github.com/kevinrobinson/commento-edu",
+  "stack": "container",
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": ["heroku-postgresql"],
+  "env": {
+    "COMMENTO_ORIGIN": "commento.example.com",
+    "COMMENTO_POSTGRES": ""
+  }
+}
