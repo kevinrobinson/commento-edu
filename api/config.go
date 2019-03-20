@@ -26,7 +26,7 @@ func configParse() error {
 		"MAX_IDLE_PG_CONNECTIONS": "50",
 
 		"BIND_ADDRESS": "127.0.0.1",
-		"PORT":         "8080",
+		// "PORT":         "8080",
 		"ORIGIN":       "",
 
 		"CDN_PREFIX": "",

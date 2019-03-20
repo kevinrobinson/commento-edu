@@ -10,7 +10,7 @@ import (
 
 func dbConnect(retriesLeft int) error {
 	con := os.Getenv("POSTGRES")
-	logger.Infof("opening connection to postgres: %s", con)
+	logger.Infof("opening connection to postgres...")
 
 	var err error
 	db, err = sql.Open("postgres", con)
