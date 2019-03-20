@@ -65,4 +65,4 @@ EXPOSE 8080
 WORKDIR /commento/
 
 ENV COMMENTO_BIND_ADDRESS="0.0.0.0"
-ENTRYPOINT ["/commento/commento"]
+CMD ["/commento/commento"]
